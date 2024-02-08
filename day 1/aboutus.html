@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="aboutus">
+    <h2>About Us Section</h2>
+    <p><a href="#" onclick="showContactPopup()">Contact us for more information</a></p>
+
+    <div id="contactPopup" class="popup">
+      <span class="popup-close" onclick="hideContactPopup()">&times;</span>
+      <p>Email:shoyabmateen@gmail.com</p>
+      <p>Phone:8309698949</p>
+    </div>
+
+    <script>
+      function showContactPopup() {
+        document.getElementById("contactPopup").style.display = "block";
+      }
+
+      function hideContactPopup() {
+        document.getElementById("contactPopup").style.display = "none";
+      }
+    </script>
+  </section>
+
+</body>
+</html>
