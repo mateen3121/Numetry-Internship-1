@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #a97373;
+    }
+
+    header {
+      background-color: rgb(66, 43, 14);
+      color: grey;
+      text-align: center;
+      padding: 10px;
+    }
+
+    section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input {
+      padding: 5px;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 5px;
+      background-color: grey;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-spacing: 0vmin;
+      border-radius: 0vmax;
+      position:center()
+    }
+  </style>
+  <title>Login</title>
+</head>
+<body>
+
+  <header>
+    <h1>Login</h1>
+  </header>
+
+  <section>
+    <form action="process-login.php" method="post">
+      <label for="LoginId">Login ID:</label>
+      <input type="text" id="LoginId" name="LoginId" required>
+
+      <label for="Password">Password:</label>
+      <input type="Password" id="Password" name="Password" required>
+      <br>
+      <br>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+</body>
+</html>

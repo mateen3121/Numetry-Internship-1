@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <navbar>
+        
+        <ul class="slidebar">
+            <li onclick=closeslidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./admission.html">Admissions</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Extra Activities</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="logo">
+            <h1>
+                Akshara
+            </h1>
+        </div>
+        <div class="ele">
+            <ul>
+                <li class="hide"><a href="#">Home</a></li>
+                <li class="hide"><a href="./aboutus.html">About Us</a></li>
+                <li class="hide"><a href="./admission.html">Admissions</a></li>
+                <li class="hide"><a href="#">Careers</a></li>
+                <li class="hide"><a href="#">Extra Activities</a></li>
+                <li class="hide"><a href="#">Contact Us</a></li>
+                <li onclick=showslidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+            </ul>
+        </div>
+    </navbar>
+    <div class="hero">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./images/school.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6" style="color: #141E46;
+              ;">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Empowering Futures, Igniting Minds: welcome to</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3" style="color:#C70039"> Akshara Instituion</h1>
+                <p class="lead" style="color:black">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        function showslidebar(){
+            const slidebar=document.querySelector('.slidebar')
+            slidebar.style.display='flex'
+        }
+        function closeslidebar(){
+            const slidebar=document.querySelector('.slidebar')
+            slidebar.style.display='none'
+        }
+    </script>
+</body>
+</html>

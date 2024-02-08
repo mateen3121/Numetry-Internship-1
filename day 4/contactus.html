@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-image: url('backgroundschool.jpg');
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="Contactus">
+    <h2>Contact us</h2>
+    <p><a href="#" onclick="showContactPopup()">For any queries regarding admission or school procedures click here for the contact details</a></p>
+
+    <div id="contactPopup" class="popup">
+      <span class="popup-close" onclick="hideContactPopup()">&times;</span>
+      <p>Email: prekidschoolqueries@gmail.com</p>
+      <p>Phone: +91 9999888801</p>
+    </div><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        .popup {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          background-color: #de9f21;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    
+        .popup-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <script>
+      function showContactPopup() {
+        document.getElementById("contactPopup").style.display = "block";
+      }
+
+      function hideContactPopup() {
+        document.getElementById("contactPopup").style.display = "none";
+      }
+    </script>
+  </section>
+
+</body>
+</html>

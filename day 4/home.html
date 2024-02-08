@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    footer{
+        background-color: rgb(60, 80, 88);
+        padding: 20px;
+        border-width: 0vmax;
+        color:rgb(45, 48, 48);
+    }
+    body {
+      background-image: url('bg.jpg');
+      font-family:Verdana, Geneva, Tahoma, sans-serif
+      
+    }
+
+    header {
+      color:rgb(220, 236, 242);
+      text-align:right;
+      padding: 20px;
+      font-size: larger;
+    }
+
+    nav {
+    background-color:rgb(9, 132, 181);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      width: 100%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <title>"Pre-Kid School"</title>
+</head>
+<body>
+
+  <header>
+    <h1>PRE-KID school</h1>
+  </header>
+<p><b>Welcome to PRE-KID SCHOOL – Where Learning Takes Flight!</b><br>
+  where joyous learning meets a nurturing environment! Our preschool is dedicated to providing a warm and engaging atmosphere that fosters the growth and development of your little ones. Explore our carefully crafted programs designed to ignite curiosity and creativity in every child. With experienced educators and a commitment to play-based learning, we create a foundation for a lifetime of love for learning. At [Preschool Name], safety is paramount, and our state-of-the-art facilities are designed to ensure a secure and supportive space for your child's early years. Discover the magic of childhood with us – enroll your little one today and embark on an exciting journey of discovery and laughter!
+  </p>
+   
+
+<section class="slider_container">
+    <div class="container">
+        <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="img1.jpg">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_box">
+                        <img src="img2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+var swiper = new Swiper(".card_slider", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  </script>
+</body>
+<footer>
+  <nav>
+    <a href="#index">Home</a>
+    <BR>
+    <a href="registration.html">Admission</a>
+    <BR>
+    <a href="login.html">Login</a>
+    <a href="Aboutus.html">About us</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+<BR>
+<p>Ensuring the privacy and security of your information is a priority at DREAM SCHOOL Our Privacy Policy is designed to transparently communicate how we collect, use, and protect your personal and non-personal data when you interact with our website. We are committed to maintaining the confidentiality of any information you provide and have implemented measures to safeguard your privacy. By navigating our website, you agree to the terms outlined in this Privacy Policy.</p>
+<br>
+<p> <b>  © 2024 DREAM SCHOOL. All Rights Reserved                                              </b></p>
+</footer>
+</html>

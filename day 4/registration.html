@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: antiquewhite;
+      color: gray;
+      text-align: center;
+      padding: 10px;
+    }
+
+    section {
+      text-align: center;
+      padding: 5px;
+    }
+
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    input {
+      padding: 10px;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 15px;
+      background-color: grey;
+      color: rgb(21, 13, 13);
+      border-spacing: 0vmax ;
+      border-radius: 0vmax;
+      size: 20px;
+      cursor: pointer;
+      position:center();
+    }
+  </style>
+  <title>Admission Registration</title>
+</head>
+<body>
+
+  <header>
+    <h1>Admission Registration</h1>
+  </header>
+
+  <section>
+    <form action="process-admission.php" method="post">
+      <label for="Name of the student">Name of the student: </label>
+      <input type="Name of the student" id="Name of the student" name="Name of the student" required>
+
+      <label for="Name of parent/guardian">Name of parent/guardian:</label>
+      <input type="Name of parent/guardian" id="Name of parent/guardian" name="Name of parent/guardian" required>
+
+      <label for="Address">Address:</label>
+      <input type="Address" id="Address" name="Address" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="userId">User ID:</label>
+      <input type="text" id="userId" name="userId" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="tel" id="mobileNumber" name="PhoneNumber" pattern="[0-9]{10}" required>
+      <br>
+      <br>
+      <br>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+</body>
+</html>
+
